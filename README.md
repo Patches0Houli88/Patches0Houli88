@@ -32,6 +32,16 @@ Key Features:
 
 You can explore the pipeline here.
 
+3. Banking dataset
+   In this project I cleaned a banking dataset to showcase trends in retaining customers. I started with handling missing values and outliers. Once the data was fully cleaned I used it to make visualizations to showcase the trends potential stakeholders would be  interested in. My next steps will including additional data from a second dataset and making a digital dashboard. 
+
+You can download the full dataset here:
+
+## Download Final Cleaned Banking Dataset
+
+You can download the compressed dataset file [here](https://github.com/Patches0Houli88/Patches0Houli88/blob/Datsets/Final_Cleaned_Banking_Dataset.csv.zip).
+
+
 🚀 What’s Next?
 
 I’m continuously adding new projects as I advance my learning in machine learning, cloud computing, and systems integration. A few things I have in the works now are a NFL statistic prediction model capable of prediction fantasy scores and upcoming games using data from previous seasons. Ive included injuries, statidiums and weather. Im currently in the final stages of training. I am also working on a Loan Default dataset. The dataset is completed and I am building some vizualizations. Stay tuned for more updates, including my upcoming work and feel free to give any feedback as Im always open to learning new and more efficient ways to complete these projects. 
