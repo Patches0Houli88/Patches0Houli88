@@ -109,6 +109,89 @@ IsActiveMember: Whether the customer is an active member (1 = yes, 0 = no)
 EstimatedSalary: The estimated salary of the customer
 Exited: Whether the customer has churned (1 = yes, 0 = no)
 
+4. NFL Fantasy Football Dataset
+Project Overview:
+
+This project involves building a comprehensive NFL Fantasy Football (FF) dataset using nfl_data_py to support predictive modeling and advanced analytics for fantasy football strategies. The dataset encompasses player statistics, weekly performance data, injury history, and defensive team stats from the 2020 to 2023 NFL seasons, making it suitable for both exploratory data analysis and machine learning applications.
+
+The dataset was constructed by aggregating various NFL statistics and merging them with player metadata and seasonal rosters. It can be used for building fantasy point prediction models, player ranking systems, and injury analysis to enhance fantasy team management. 
+
+File Names:
+•	nfl_season_data.csv: The complete cleaned dataset combining player performance, fantasy statistics, and injury data.
+•	nfl_team_defense_data.csv: Dataset containing defensive statistics for all NFL teams.
+•	nfl_draft_picks.csv: Data for NFL draft picks for the 2024 season.
+
+Data Sources:
+A.	nfl_data_py: Primary data extraction library used to gather weekly, seasonal, and player-level data.
+B.	Pro-Football-Reference.com: Supplementary source for team-level statistics and defense data.
+
+Dataset Structure and Key Columns:
+
+Player Information:
+	•	player_id: Unique identifier for each player.
+	•	player_name: Full name of the player.
+	•	position: The position played by the player (e.g., QB, RB, WR).
+•	player_team: The team for which the player is currently playing
+ 
+ Weekly Performance Data:
+	•	week: NFL week of the season.
+	•	completions, attempts, passing_yards, passing_tds: Passing statistics.
+	•	carries, rushing_yards, rushing_tds: Rushing statistics.
+	•	receptions, targets, receiving_yards, receiving_tds: Receiving statistics.
+	•	fantasy_points, fantasy_points_ppr: Total fantasy points scored by the player for that week.
+
+Advanced Metrics:
+	•	target_share, air_yards_share, wopr: Advanced metrics measuring player usage and efficiency.
+	•	passing_epa, rushing_epa, receiving_epa: Expected Points Added (EPA) metrics.
+
+Injury Data:
+	•	report_primary_injury: The primary injury reported for a player.
+	•	practice_status: Practice participation status.
+•	report_status: Game day availability status (Active, Questionable, Out).
+
+Defensive Team Stats:
+•	team_defense_data.csv: Includes defensive team statistics, opponent yards allowed, and scoring statistics.
+
+Key Steps in Building the Dataset:
+
+Data Import and Initial Inspection:
+•	Imported player metadata and seasonal rosters using nfl_data_py to establish a base dataset.
+•	Extracted weekly performance data from the NFL’s official records dating back to 2020.
+•	Previewed columns to identify necessary fields for fantasy prediction and player analysis.
+
+Data Cleaning and Preprocessing:
+•	Removed unnecessary columns and handled missing values using data imputation techniques.
+•	Standardized player and team names to ensure consistency across datasets.
+•	Downcasted numeric values to optimize memory usage for larger datasets.
+
+Data Merging:
+•	Merged player metadata with weekly performance data to create a single comprehensive dataset.
+•	Integrated defensive stats to include opponent team performance for context.
+•	Added recent injury history to enhance predictive modeling capabilities.
+
+Advanced Statistics and Filtering:
+•	Filtered the dataset for specific player positions (QB, RB, WR, TE, K) to focus on key contributors to fantasy scoring.
+•	Aggregated fantasy points for the last three seasons to identify top players by position.
+
+Defensive Team Analysis:
+•	Imported and analyzed team defense data to evaluate the impact of opposing defenses on player performance.
+
+Usage Instructions:
+
+This dataset is ideal for building fantasy football prediction models, performing player performance analysis, and conducting advanced statistical analysis. Users can apply it to:
+
+•	Predict Fantasy Points: Train machine learning models to forecast weekly player performance.
+•	Identify Top Players: Use historical data to rank players and identify potential breakout candidates.
+•	Analyze Injury Impact: Study the effect of injuries on player productivity and game availability.
+
+# Code to load the dataset:
+import pandas as pd
+
+# Load the main dataset
+nfl_data = pd.read_csv('nfl_season_data.csv')
+
+Note: I do currently have the prediction model in the final stages and will upload to the repository when its ready. 
+----------------------------------------------------------------------------------------------------------------------------
 🚀 What’s Next?
 
 I’m continuously adding new projects as I advance my learning in machine learning, cloud computing, and systems integration. A few things I have in the works now are a NFL statistic prediction model capable of prediction fantasy scores and upcoming games using data from previous seasons. Ive included injuries, statidiums and weather. Im currently in the final stages of training. I am also working on a Loan Default dataset. The dataset is completed and I am building some vizualizations. Stay tuned for more updates, including my upcoming work and feel free to give any feedback as Im always open to learning new and more efficient ways to complete these projects. 
