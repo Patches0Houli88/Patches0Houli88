@@ -2,7 +2,7 @@ Welcome to My GitHub Profile!
 
 About Me
 
-Hello! My name is William, I am a data analyst and aspiring software engineer, currently working towards a Bachelor’s in Computer Science and a Google Data Analytics Certification. My focus lies in leveraging data to build meaningful models, pipelines, and systems that enhance decision-making and operational efficiency. On this GitHub page, you’ll find some of my recent projects that reflect my passion for data analysis, machine learning, and process automation.
+Hello! My name is William, My focus lies in leveraging data to build meaningful models, pipelines, and systems that enhance decision-making and operational efficiency. On this GitHub page, you’ll find some of my recent projects that reflect my passion for data analysis, machine learning, and process automation.
 
 📂 Projects
 
